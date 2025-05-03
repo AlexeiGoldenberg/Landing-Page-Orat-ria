@@ -1,2 +1,2 @@
-# Landing-Page-Orat-ria
-Um protótipo de landing page para meus serviçõs de oratória
+# Landing-Page-Oratoria
+Um protótipo de landing page para meus serviçõs de oratória.
