@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexei Goldenberg | Oratória e Expressividade com Técnicas Teatrais</title>
+    <meta name="description" content="Método infalível de oratória baseado em técnicas teatrais para palestras, reuniões e apresentações. Transforme sua comunicação em poder pessoal e profissional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Alexei<span>Goldenberg</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#method">Método</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    /* CSS Reset e Variáveis */
+    <style>  
+    :root {
+        --primary: #2A4365; /* Azul profundo - transmite confiança e profissionalismo */
+        --secondary: #CC5500; /* Vermelho terroso - energia e paixão */
+        --accent: #F6AD55; /* Dourado - criatividade e excelência */
+        --light: #E8E4D6; /* Branco suave */
+        --dark: #1A202C; /* Preto suave */
+        --text: #4A5568; /* Cinza escuro para texto */
+        --text-light: #718096; /* Cinza médio */
+        --success: #48BB78; /* Verde */
+        --font-primary: 'Montserrat', sans-serif;
+        --font-secondary: 'Playfair Display', serif;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: var(--font-primary);
+        color: var(--text);
+        line-height: 1.6;
+        background-color: var(--light);
+    }
+    
+    /* Estilos Gerais */
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    h1, h2, h3, h4 {
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--dark);
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+    }
+    
+    h2:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: var(--accent);
+        margin: 15px auto 0;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: var(--secondary);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .btn:hover {
+        background: #9B2C2C;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-outline {
+        background: transparent;
+        border: 2px solid var(--secondary);
+        color: var(--secondary);
+    }
+    
+    .btn-outline:hover {
+        background: var(--secondary);
+        color: white;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-accent {
+        color: var(--accent);
+    }
+    
+    .text-primary {
+        color: var(--primary);
+    }
+    
+    /* Header */
+    header {
+        background-color: #E8E4E6;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .logo {
+        font-family: var(--font-secondary);
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-decoration: none;
+    }
+    
+    .logo span {
+        color: var(--secondary);
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin-left: 30px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--dark);
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: var(--secondary);
+    }
+    
+    .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--primary);
+        cursor: pointer;
+    }
+    
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #1E3A8A 100%);
+        color: white;
+        padding: 180px 0 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+        opacity: 0.2;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+    }
+    
+    .hero h1 {
+        color: white;
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .hero-btns {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .hero-btns .btn {
+        background: var(--accent);
+        color: var(--dark);
+    }
+    
+    .hero-btns .btn:hover {
+        background: #DD6B20;
+        color: white;
+    }
+    
+    .hero-btns .btn-outline {
+        border-color: white;
+        color: white;
+        background: transparent;
+    }
+    
+    .hero-btns .btn-outline:hover {
+        background: white;
+        color: var(--primary);
+    }
+    
+    /* About Section */
+    .about {
+        background: white;
+    }
+    
+    .about-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .about-img {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .about-content {
+        flex: 1;
+    }
+    
+    .about-content h2 {
+        text-align: left;
+    }
+    
+    .about-content h2:after {
+        margin: 15px 0 0;
+    }
+    
+    .stats {
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    
+    .stat-item {
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 5px;
+    }
+    
+    .stat-text {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+    
+    /* Method Section */
+    .method {
+        background: var(--light);
+    }
+    
+    .method h2 {
+        margin-bottom: 60px;
+    }
+    
+    .method-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    
+    .method-card {
+        background: white;
+        border-radius: 10px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .method-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .method-icon {
+        font-size: 3rem;
+        color: var(--accent);
+        margin-bottom: 20px;
+    }
+    
+    /* Plans Section */
+    .plans {
+        background: white;
+    }
+    
+    .plans h2 {
+        margin-bottom: 60px;
+    }
+    
+    .plans-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    
+    .plan-card {
+        background: var(--light);
+        border-radius: 10px;
+        padding: 40px 30px;
+        text-align: center;
+        border: 1px solid #E2E8F0;
+        transition: all 0.3s;
+    }
+    
+    .plan-card.popular {
+        background: var(--primary);
+        color: white;
+        border: none;
+        position: relative;
+        transform: scale(1.05);
+    }
+    
+    .plan-card.popular:before {
+        content: 'MAIS POPULAR';
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--accent);
+        color: var(--dark);
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    .plan-card.popular h3,
+    .plan-card.popular .plan-price,
+    .plan-card.popular .plan-features li,
+    .plan-card.popular .plan-features li:before {
+        color: white;
+    }
+    
+    .plan-card.popular .btn {
+        background: var(--accent);
+        color: var(--dark);
+    }
+    
+    .plan-card.popular .btn:hover {
+        background: #DD6B20;
+        color: white;
+    }
+    
+    .plan-card:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .plan-name {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .plan-price {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 20px;
+    }
+    
+    .plan-price span {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .plan-features {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+    
+    .plan-features li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px;
+        text-align: left;
+    }
+    
+    .plan-features li:before {
+        content: '\f00c';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: var(--success);
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+        background: var(--light);
+    }
+    
+    .testimonial-slider {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .testimonial-card {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        margin: 0 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    .testimonial-text:before,
+    .testimonial-text:after {
+        content: '"';
+        font-size: 3rem;
+        color: var(--accent);
+        opacity: 0.3;
+        position: absolute;
+    }
+    
+    .testimonial-text:before {
+        top: -20px;
+        left: -15px;
+    }
+    
+    .testimonial-text:after {
+        bottom: -40px;
+        right: -15px;
+    }
+    
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .testimonial-author img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+    
+    .author-info h4 {
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+    
+    .author-info p {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+    
+    /* CTA Section */
+    .cta {
+        background: linear-gradient(135deg, var(--primary) 0%, #1E3A8A 100%);
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .cta h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .cta h2:after {
+        background: var(--accent);
+    }
+    
+    .cta p {
+        max-width: 700px;
+        margin: 0 auto 40px;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+/* Footer - Versão Corrigida */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about {
+    grid-column: 1;
+}
+
+.footer-links {
+    grid-column: 2;
+}
+
+.footer-contact {
+    grid-column: 3;
+}
+
+.footer-logo {
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-logo span {
+    color: var(--accent);
+}
+
+.footer-about p {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--accent);
+    color: var(--dark);
+}
+
+.footer-links h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-family: var(--font-primary);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        grid-column: auto;
+    }
+}
+    </style> 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transforme sua comunicação em <span class="text-accent">poder</span> pessoal e profissional</h1>
+                <p>Método exclusivo de oratória baseado em técnicas teatrais para você se expressar com autenticidade, clareza e confiança em qualquer situação.</p>
+                <div class="hero-btns">
+                    <a href="#plans" class="btn">Quero me comunicar melhor</a>
+                    <a href="#about" class="btn btn-outline">Conhecer o método</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Alexei Goldenberg ensinando oratória">
+            </div>
+            <div class="about-content">
+                <h2>Quem é <span class="text-primary">Alexei Goldenberg</span></h2>
+                <p>Com 10 anos de experiência como ator, diretor e professor, especializei-me em técnicas vocais e corporais utilizadas por atores profissionais para performar em frente a grandes públicos.</p>
+                <p>Desenvolvi um método único que combina o melhor das técnicas teatrais com as necessidades da comunicação moderna, seja para palestras, reuniões corporativas, vendas ou superação da timidez.</p>
+                <p>Minha missão é ajudar pessoas e equipes a se expressarem com autenticidade e confiança, transformando a comunicação em uma ferramenta poderosa para o sucesso.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-text">Anos de experiência</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Alunos transformados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-text">Foco em resultados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section id="method" class="method">
+        <div class="container">
+            <h2><span class="text-primary">Método</span> O Poder da Voz</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">Desenvolvido a partir de anos de estudo e prática teatral, meu método aborda os pilares essenciais para uma comunicação poderosa e autêntica.</p>
+            
+            <div class="method-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Técnica Vocal</h3>
+                    <p>Domine sua voz com exercícios de projeção, articulação, modulação e ressonância para transmitir confiança e clareza.</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Expressão Corporal</h3>
+                    <p>Aprenda a usar gestos, postura e movimentos para reforçar sua mensagem e conectar-se profundamente com sua audiência.</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Presença Cênica</h3>
+                    <p>Desenvolva a habilidade de ocupar espaços com naturalidade e autoridade, mantendo o foco e a atenção do público.</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Autenticidade</h3>
+                    <p>Encontre sua voz única e aprenda a se expressar de maneira genuína, construindo conexões reais com seu público.</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Estrutura de Conteúdo</h3>
+                    <p>Organize suas ideias de forma clara e persuasiva, criando narrativas cativantes que engajam e inspiram.</p>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Superação de Medos</h3>
+                    <p>Técnicas comprovadas para gerenciar o nervosismo e transformar a ansiedade em energia positiva para sua performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Escolha o <span class="text-primary">Plano Ideal</span> Para Você</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">Ofereço três formatos principais, com flexibilidade para adaptar à sua realidade. Todos os planos incluem o primeiro encontro gratuito para análise de caso.</p>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3 class="plan-name">Aula Única</h3>
+                    <div class="plan-price">R$ 150<span>/sessão</span></div>
+                    <ul class="plan-features">
+                        <li>Sessão avulsa de 50 minutos</li>
+                        <li>Técnicas práticas imediatas</li>
+                        <li>Orientação pontual</li>
+                        <li>Feedback personalizado</li>
+                        <li>Material de apoio</li>
+                    </ul>
+                    <a href="#" class="btn">Agendar agora</a>
+                </div>
+                
+                <div class="plan-card popular">
+                    <h3 class="plan-name">Pacote 4 Sessões</h3>
+                    <div class="plan-price">R$ 500<span>/total</span></div>
+                    <ul class="plan-features">
+                        <li>4 sessões de 50 minutos</li>
+                        <li>Prática estruturada</li>
+                        <li>Exercícios personalizados</li>
+                        <li>Simulações reais</li>
+                        <li>Acompanhamento contínuo</li>
+                        <li>Material exclusivo</li>
+                    </ul>
+                    <a href="#" class="btn">Quero este pacote</a>
+                </div>
+                
+                <div class="plan-card">
+                    <h3 class="plan-name">Pacote 8 Sessões</h3>
+                    <div class="plan-price">R$ 1000<span>/total</span></div>
+                    <ul class="plan-features">
+                        <li>8 sessões de 50 minutos</li>
+                        <li>Aprofundamento completo</li>
+                        <li>Técnicas avançadas</li>
+                        <li>Análise de performance</li>
+                        <li>Gravação e feedback</li>
+                        <li>Suporte entre sessões</li>
+                        <li>Certificado de conclusão</li>
+                    </ul>
+                    <a href="#" class="btn">Quero transformação</a>
+                </div>
+            </div>
+            
+            <p class="text-center" style="margin-top: 40px;">
+                <a href="https://calendly.com/alexeigoldenberg" class="btn" style="margin-top: 20px; display: inline-block;">
+                    <i class="fas fa-calendar-check"></i> Agendar diagnóstico gratuito (30min)
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>O Que <span class="text-primary">Meus Alunos</span> Dizem... </h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Após 8 sessões com o Alexei, minha capacidade de comunicação mudou completamente. Consegui minha promoção e hoje lidero reuniões com confiança que nunca imaginei ter.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Depoimento de Marina">
+                        <div class="author-info">
+                            <h4>Marina R.</h4>
+                            <p>Gerente de Projetos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outros depoimentos seriam adicionados aqui com JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para <span class="text-accent">transformar</span> sua comunicação?</h2>
+            <p>Agende agora seu diagnóstico gratuito de 30 minutos e descubra como minhas técnicas podem ajudar você a se expressar com mais clareza, confiança e impacto.</p>
+            <a href="https://calendly.com/alexeigoldenberg" class="btn" style="margin-top: 20px; display: inline-block;">
+                <i class="fas fa-calendar-check"></i> Agendar Consulta Gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Alexei<span>Goldenberg</span></a>
+                    <p>Ajudando pessoas e equipes a se expressarem com autenticidade, clareza e confiança, transformando comunicação em poder pessoal e profissional.</p>
+                    <div class="social-links">
+                            <a href="https://www.instagram.com/alex6golden/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alexei-cardoso-goldenberg-158351213/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5554999768460" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#method">Método</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> alexeicardosogoldenberg@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (54) 99976-8460</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Porto Alegre - RS, Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alexei Goldenberg. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu Mobile
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav ul');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Fechar menu mobile se aberto
+                    if (window.innerWidth <= 768 && nav.style.display === 'block') {
+                        nav.style.display = 'none';
+                    }
+                }
+            });
+        });
+        
+        // Testimonial Slider (simplificado - em produção usar biblioteca como Slick)
+        let currentTestimonial = 0;
+        const testimonials = [
+            {
+                text: "O trabalho do Alexei mudou minha carreira. Em poucas semanas superei meu medo de falar em público e hoje sou uma das palestrantes mais requisitadas da minha empresa.",
+                name: "Carolina S.",
+                role: "Palestrante Corporativa",
+                img: "https://randomuser.me/api/portraits/women/32.jpg"
+            },
+            {
+                text: "Como vendedor, a comunicação é tudo. As técnicas que aprendi com o Alexei me ajudaram a aumentar minhas vendas em 40% no último trimestre.",
+                name: "Ricardo M.",
+                role: "Executivo de Vendas",
+                img: "https://randomuser.me/api/portraits/men/75.jpg"
+            }
+        ];
+        
+        function updateTestimonial() {
+            const testimonial = testimonials[currentTestimonial];
+            const testimonialCard = document.querySelector('.testimonial-card');
+            
+            testimonialCard.querySelector('.testimonial-text').textContent = testimonial.text;
+            testimonialCard.querySelector('h4').textContent = testimonial.name;
+            testimonialCard.querySelector('p').textContent = testimonial.role;
+            testimonialCard.querySelector('img').src = testimonial.img;
+            
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        }
+        
+        // Rotação automática de depoimentos (a cada 8 segundos)
+        setInterval(updateTestimonial, 8000);
+        
+        // Formulário de contato (simplificado)
+        document.querySelectorAll('.btn, .btn-outline').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    // Em produção, isso abriria um modal de formulário
+                    alert("Formulário de agendamento será aberto. Em uma implementação real, isso seria conectado a um sistema de agendamento como Calendly ou um formulário personalizado.");
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>
